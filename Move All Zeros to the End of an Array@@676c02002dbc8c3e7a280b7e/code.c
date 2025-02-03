@@ -8,10 +8,10 @@ int main() {
     scanf("%d",&a[i]);
     for (j=0;j<n;j++){
         for (i=0;i<n-1;i++){
-            if (a[j]==0){
-                temp=a[j];
-                a[j]=a[j+1];
-                a[n-ctr]=temp;
+            if (a[i]==0){
+                temp=a[i];
+                a[i]=a[i+1];
+                a[i+1]=temp;
             }
         }
     }
