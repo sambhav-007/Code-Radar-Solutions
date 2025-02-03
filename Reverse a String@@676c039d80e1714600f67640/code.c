@@ -2,12 +2,12 @@
 #include<string.h>
 int main() {
     char s[100],rs[100];
-    int i,l;
+    int i,l,j=0;
     gets(s);
     l=strlen(s);
-    for (i=l;i>=0;i--){
-        rs[l]=s[i];
-        l--;
+    for (i=l-1;i>=0;i--){
+        rs[j]=s[i];
+        j++;
     }
     printf("%s",rs);
     return 0;
