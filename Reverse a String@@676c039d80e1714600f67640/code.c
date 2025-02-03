@@ -3,7 +3,8 @@
 int main() {
     char s[100],rs[100];
     gets(s);
-    rs=strrev(s);
+    strrev(s);
+    strcpy(rs,s);
     printf("%s",rs);
     return 0;
 }
