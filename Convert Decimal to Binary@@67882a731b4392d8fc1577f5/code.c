@@ -3,6 +3,6 @@
 int main() {
     int a;
     scamf("%d",&a);
-    printf("%0*b",a);
+    printf("%b",a);
     return 0;
 }
