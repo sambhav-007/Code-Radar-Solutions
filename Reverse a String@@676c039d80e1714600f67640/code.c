@@ -5,9 +5,9 @@ int main() {
     int i,l,j=0;
     gets(s);
     l=strlen(s);
+    for(j=0;j<l;j++)
     for (i=l-1;i>=0;i--){
-        rs[j]=s[i];
-        j++;
+        rs[j]=s[i];    
     }
     printf("%s",rs);
     return 0;
