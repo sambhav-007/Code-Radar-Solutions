@@ -10,7 +10,7 @@ int main() {
     for (j=0;j<n-1;j++){
         for (i=0;i<n-2;i++){
             if (a[i]==0){
-                temp=a[i];
+                int temp=a[i];
                 a[i]=a[i+1];
                 a[i+1]=temp;
             }
