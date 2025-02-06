@@ -23,7 +23,7 @@ int main() {
         a[i] = a[k - i - 1];
         a[k - i - 1] = temp;
     }
-    for(i=k; i<n/2; i++){
+    for(i=k+1; i<n/2; i++){
         temp=a[i];
         a[i]=a[n-i-1];
         a[n-i-1]=temp;
