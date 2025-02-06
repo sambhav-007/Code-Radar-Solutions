@@ -6,11 +6,11 @@ int main() {
         scanf("%d",&a[i]);
     }
     scanf("%d",&k);
-    for(i=0;i<n/2;i++){
+    /*for(i=0;i<n/2;i++){
         temp=a[i];
         a[i]=a[n-i-i];
         a[n-i-1]=temp;
-    }
+    }*/
     for(i=k;i<n/2;i++){
         temp=a[i];
         a[i]=a[n-i-1];
