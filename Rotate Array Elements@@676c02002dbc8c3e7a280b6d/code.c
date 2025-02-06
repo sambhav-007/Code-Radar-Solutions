@@ -13,8 +13,8 @@ int main() {
     }
     for(i=0;i<k/2;i++){
         temp=a[i];
-        a[i]=a[n-i];
-        a[n-i]=temp;
+        a[i]=a[k-i];
+        a[k-i]=temp;
     }
     for (i=0;i<n;i++){
     printf("%d\n",a[i]);
