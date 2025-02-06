@@ -25,7 +25,7 @@ int main() {
     }
 
     for (i = 0; i < n; i++) {
-        printf("%d ", a[i]);
+        printf("%d\n ", a[i]);
     }
 
     return 0;
