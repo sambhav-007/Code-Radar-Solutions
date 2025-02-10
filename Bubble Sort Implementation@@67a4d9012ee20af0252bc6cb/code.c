@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Bubble Sort function
+// Function to perform Bubble Sort
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -24,16 +24,24 @@ void printArray(int arr[], int n) {
 
 int main() {
     int n;
-    // Input array size
-    scanf("%d", &n);
-    int arr[n];
 
-    // Input array elements
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    // Take input for array size
+    if (scanf("%d", &n) != 1 || n <= 0) {
+        printf("Invalid input\n");
+        return 1;
     }
 
-    // Sort array
+    int arr[n]; // Variable Length Array (VLA) supported in C99+
+
+    // Take input for array elements
+    for (int i = 0; i < n; i++) {
+        if (scanf("%d", &arr[i]) != 1) {
+            printf("Invalid input\n");
+            return 1;
+        }
+    }
+
+    // Perform Bubble Sort
     bubbleSort(arr, n);
 
     // Print sorted array
