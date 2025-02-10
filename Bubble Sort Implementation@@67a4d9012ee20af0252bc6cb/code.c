@@ -1,22 +1,33 @@
 #include <stdio.h>
+
 int main() {
-    int n,temp=0;
-    scanf("%d",&n);
+    int n;
+    scanf("%d", &n);
     int a[n];
-    for (int i =0; i<n; i++){
-        scanf("%d",&a[i]);
+
+    // Taking input
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
     }
-    for (int i=1; i<n;i++){
-        for(int j=0;j<n-i;j++){
-            if(a[j]>a[j+1]){
-                temp = a[j];
-                a[j] = a[j+1];
-                a[j+1] = temp;
+
+    // Optimized Bubble Sort
+    for (int i = 0; i < n - 1; i++) {
+        int swapped = 0;  // Track if any swaps happened in this pass
+        for (int j = 0; j < n - i - 1; j++) {
+            if (a[j] > a[j + 1]) {
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+                swapped = 1;  // Swap occurred
             }
         }
+        if (!swapped) break;  // Stop if no swaps occurred
     }
-    for (int i =0; i<n; i++){
-        printf("%d ",a[i]);
+
+    // Printing sorted array
+    for (int i = 0; i < n; i++) {
+        printf("%d ", a[i]);
     }
+
     return 0;
 }
