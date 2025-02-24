@@ -8,7 +8,7 @@ struct Student {
 
 int main() {
     int N;
-    float sum;
+    float sum=0;
     
     scanf("%d", &N);
     
