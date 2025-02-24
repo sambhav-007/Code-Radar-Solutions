@@ -7,7 +7,7 @@ struct Student {
 };
 
 int main() {
-    int N,a;
+    int N,a,ctr=0;
     float sum=0;
     
     scanf("%d", &N);
@@ -20,11 +20,13 @@ int main() {
     }
     scanf("%d",&a);
     for(int i=0;i<N;i++){
-        if(students[i].roll_number==a)
+        if(students[i].roll_number==a){
         printf("Roll Number: %d, Name: %s, Marks: %.2f",students[i].roll_number,students[i].name,students[i].marks);
-        else
-        printf("Student not found");
+        ctr=1;
+        }
     }
+    if(ctr==0)
+    printf("Student not found");
 
     return 0;
 }
