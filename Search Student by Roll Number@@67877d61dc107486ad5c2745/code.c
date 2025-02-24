@@ -22,7 +22,7 @@ int main() {
     for(int i=0;i<N;i++){
         if(students[i].roll_number==a)
         printf("Roll Number: %d, Name: %s, Marks: %.2f",students[i].roll_number,students[i].name,students[i].marks);
-        else:
+        else
         printf("Student not found");
     }
 
