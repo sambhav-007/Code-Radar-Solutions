@@ -16,9 +16,9 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
-        sum+=(float)students[i].marks;
+        sum+=students[i].marks;
     }
-    printf("Average Marks: %.2f",sum/N);
+    printf("Average Marks: %.2f",sum/(float)N);
 
     return 0;
 }
