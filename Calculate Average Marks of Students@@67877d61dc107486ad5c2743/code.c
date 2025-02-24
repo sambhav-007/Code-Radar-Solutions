@@ -8,7 +8,7 @@ struct Student {
 
 int main() {
     int N;
-    float avg,sum;
+    float sum;
     
     scanf("%d", &N);
     
@@ -18,7 +18,7 @@ int main() {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
         sum+=(float)students[i].marks;
     }
-    printf("Average Marks: %.2f",sum/N;
+    printf("Average Marks: %.2f",sum/N);
 
     return 0;
 }
