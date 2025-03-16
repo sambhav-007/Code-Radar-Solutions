@@ -14,5 +14,5 @@ int main(){
             min=l[i];
         }
     }
-    printf("%d %d",max,min);
+    printf("%d %d",min,max);
 }
