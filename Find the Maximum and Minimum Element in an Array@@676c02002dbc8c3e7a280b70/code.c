@@ -6,7 +6,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&l[i]);
     }
-    int max=l[0],min=l[0]
+    int max=l[0],min=l[0];
     for(int i=0;i<n-1;i++){
         if(l[i]>=l[i+1]){
             max=l[i];
