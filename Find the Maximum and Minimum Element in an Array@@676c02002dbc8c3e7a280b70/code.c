@@ -7,11 +7,11 @@ int main(){
         scanf("%d",&l[i]);
     }
     int max=l[0],min=l[0];
-    for(int i=0;i<n-1;i++){
-        if(l[i]>l[i+1]){
+    for(int i=1;i<n-1;i++){
+        if(l[i]>max){
             max=l[i];
         }
-        if(l[i]<l[i+1]){
+        if(l[i]<min){
             min=l[i];
         }
     }
