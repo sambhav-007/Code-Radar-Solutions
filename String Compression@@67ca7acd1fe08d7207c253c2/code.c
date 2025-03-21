@@ -8,7 +8,7 @@ void compressString(char *str,char *compressed){
             ctr++;
         }
         else {
-    index += sprintf(&compressed[index], "%c%d", str[i], count);
+    index += sprintf(&compressed[index], "%c%d", str[i], ctr);
     count = 1;
 }
     }
