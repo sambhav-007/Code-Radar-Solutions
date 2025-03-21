@@ -6,7 +6,7 @@ int isPalindrome(char str[]) {
     
     while (left < right) {
         if (str[left] != str[right])
-            return 0; 
+            return 0;  
         left++;
         right--;
     }
@@ -15,11 +15,14 @@ int isPalindrome(char str[]) {
 
 int main() {
     char str[100];
-    
+
+    printf("Enter a string: ");
+    scanf("%s", str); 
+
     if (isPalindrome(str))
-        printf("Yes");
+        printf("Yes\n");
     else
-        printf("No");
+        printf("No\n");
 
     return 0;
 }
