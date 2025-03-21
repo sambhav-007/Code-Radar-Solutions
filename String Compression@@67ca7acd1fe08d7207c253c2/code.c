@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include<string.h>
 void compressString(char *str,char *compressed){
     int len = strlen(str);
     int index=0, ctr=0;
