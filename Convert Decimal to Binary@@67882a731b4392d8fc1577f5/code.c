@@ -1,34 +1,27 @@
 #include <stdio.h>
 
 void decimalToBinary(int num) {
-    int i;
-    int started = 0;  
-
     if (num == 0) {
         printf("0\n");
         return;
     }
 
-    for (i = 31; i >= 0; i--) {
-        int bit = (num >> i) & 1;
+    int binary[32], i = 0;
+    while (num > 0) {
+        binary[i++] = num % 2;
+        num /= 2;
+    }
 
-        if (bit == 1) {
-            started = 1;
-        }
-        
-        if (started) {
-            printf("%d", bit);
-        }
+    for (i = i - 1; i >= 0; i--) {
+        printf("%d", binary[i]);
     }
     printf("\n");
 }
 
 int main() {
     int decimal;
-
     scanf("%d", &decimal);
-
     decimalToBinary(decimal);
-
     return 0;
 }
+
