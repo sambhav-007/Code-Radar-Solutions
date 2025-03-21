@@ -14,7 +14,7 @@ int isPalindrome(char str[]) {
 }
 
 int main() {
-    char str[];
+    char str[100];
     
     if (isPalindrome(str))
         printf("Yes");
