@@ -1,18 +1,25 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
-    char str[100],revstr[100];
+#include <stdio.h>
+#include <string.h>
 
-    scanf("%s",&str);
-    int n = strlen(str);
-    strcmp(revstr,strrev(str));
-    for (int i==0;i>n;i++){
-        if(str[i]!=revstr[i]){
-            printf("N0");
-            return 0;
-        }
+int isPalindrome(char str[]) {
+    int left = 0, right = strlen(str) - 1;
+    
+    while (left < right) {
+        if (str[left] != str[right])
+            return 0; 
+        left++;
+        right--;
     }
-    printf("yes");
+    return 1;  
+}
 
-    }
+int main() {
+    char str[];
+    
+    if (isPalindrome(str))
+        printf("Yes");
+    else
+        printf("No");
+
+    return 0;
 }
