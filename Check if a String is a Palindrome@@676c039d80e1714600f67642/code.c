@@ -5,7 +5,7 @@ int main(){
 
     scanf("%s",&str);
     int n = strlen(str);
-    strcmp(revstr,strrev(str));
+    strcmp(revstr,strsep(str));
     for (int i==0;i>n;i++){
         if(str[i]!=revstr[i]){
             printf("N0");
