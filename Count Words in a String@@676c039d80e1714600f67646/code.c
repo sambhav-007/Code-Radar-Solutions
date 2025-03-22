@@ -5,7 +5,7 @@ int main(){
     char str[100];
     scanf("%s",str);
     for (int i=0;i<strlen(str);i++){
-        if(( i==0 || str[i-1]==" ")&&str[i]!=" "){
+        if(( i==0 || str[i-1]==' ')&&str[i]!=' '){
             ctr++;
         }
     }
