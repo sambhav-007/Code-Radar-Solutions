@@ -3,7 +3,7 @@
 int main(){
     int ctr=0;
     char str[100];
-    scanf("%s",str);
+    fgets(str, sizeof(str), stdin);
     for (int i=0;i<strlen(str);i++){
         if(( i==0 || str[i-1]==' ')&&str[i]!=' '){
             ctr++;
