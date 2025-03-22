@@ -4,7 +4,7 @@ int main(){
     int ctr=0;
     char str[100];
     scanf("%s",str);
-    for (i=0;i<strlen(str);i++){
+    for (int i=0;i<strlen(str);i++){
         if((int i==0 || str[i-1]==" ")&&str[i]!=" "){
             ctr++;
         }
