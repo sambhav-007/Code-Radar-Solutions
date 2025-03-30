@@ -1,4 +1,4 @@
-void deflateBalloons(int air[]; int n){
+void deflateBalloons(int air; int n){
     int ctr=0,sml=0;
     for(int i=0;i<n;i++){
         air[i]-=sml;
