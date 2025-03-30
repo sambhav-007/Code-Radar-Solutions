@@ -9,6 +9,7 @@ int main(){
 
     for (int i=arr[0];i<arr[n-2];i++){
         if(arr[i]>arr[i+1]){
+            printf("%d",&i);
             flag=1;
         }
     }
